@@ -29,16 +29,10 @@ def logar(request):
 
 
 def cadastro(request):
-    if request.user.is_authenticated:
-        if request.method == 'GET':
+    
+    if request.method == 'GET':
             return render(request, 'cadastro.html')
 
-        return redirect('/')
-
-    if request.method == 'GET':
-        messages.add_message(request, constants.WARNING,
-                             'A url não pode ser acessada')
-        return redirect('/')
 
     elif request.method == 'POST':
         username = request.POST.get('username')

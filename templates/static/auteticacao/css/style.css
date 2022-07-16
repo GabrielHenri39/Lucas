@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .sidebar {
-    background-color: #298839;
+    background-image: linear-gradient(to right, #ccffcc,#a8f5a8);;
     height: 100vh;
 }
 
@@ -37,6 +37,7 @@
 .titulo {
     font-size: 32px;
     font-weight: bold;
+    letter-spacing: 3px;
     font-family: 'Lobster', cursive;
     display: inline;
 }
@@ -46,16 +47,16 @@
 }
 
 .btn_logar {
-    color: white;
+    color: rgb(7, 7, 7);
     font-size: 30px;
-    border: 2px solid white;
+    border: 2px solid rgb(0, 0, 0);
     padding: 10px 20px 10px 20px;
     border-radius: 20px;
 }
 
 .btn_logar:hover {
     text-decoration: none;
-    color: white;
+    color: rgb(3, 3, 3);
 }
 
 .area_cadastrar {
@@ -102,7 +103,7 @@
 .btn_cadastrar {
     background-color: #298839;
     border: none;
-    color: white;
+    color:white;
     font-size: 30px;
     padding: 5px 6px 5px 6px;
     border-radius: 20px;

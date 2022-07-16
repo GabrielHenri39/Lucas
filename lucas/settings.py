@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'auteticacao',
+    'autenticacao',
+    'plataforma',
 ]
 
 MIDDLEWARE = [
@@ -136,7 +137,7 @@ MESSAGE_TAGS = {
 
 }
 
-AUTH_USER_MODEL = 'auteticacao.User'
+AUTH_USER_MODEL = 'autenticacao.User'
 
 
 # Default primary key field type
