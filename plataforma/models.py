@@ -24,7 +24,7 @@ class Paciente(models.Model):
 
 class DadosPaciente(models.Model):
     paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE)
-    data = models.DateTimeField()
+    data = models.DateField()
     peso = models.IntegerField()
     altura = models.IntegerField()
     pa = models.IntegerField()
@@ -34,7 +34,7 @@ class DadosPaciente(models.Model):
     objetivo = models.TextField()
 
     def __str__(self):
-        return f"Paciente({self.paciente.nome_do_paciente}, {self.peso})"
+        return f"Paciente({self.paciente}, {self.peso})"
 
-class EscalaDeEva(models.Model):
-    pass
+# class EscalaDeEva(models.Model):
+#     pass

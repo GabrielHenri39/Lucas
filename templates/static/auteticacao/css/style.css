@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 .sidebar {
-    background-image: linear-gradient(to right, #ccffcc,#a8f5a8);;
+    background-image: linear-gradient(to right, #ccffcc,#003f18);;
     height: 100vh;
 }
 
@@ -24,7 +24,6 @@
 
 .logo {
     font-size: 50px;
-    ;
     color: white;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -32,6 +31,9 @@
 .corpo_sidebar {
     margin-top: 50px;
     text-align: center;
+}
+.bg_navbar {
+    background-color: #128607f3;
 }
 
 .titulo {
