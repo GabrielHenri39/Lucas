@@ -1,3 +1,4 @@
+from tabnanny import verbose
 from django.db import models
 from  autenticacao.models import User
 
@@ -9,6 +10,7 @@ choice_de_sexo = (
 
 class Paciente(models.Model):
     nome_do_paciente = models.CharField(max_length=50, verbose_name='Nome do Paciente')
+    telefone = models.CharField(max_length=19)
     cpf = models.CharField(max_length=15, null=True, blank=True, unique=True)
     data_de_nacimento = models.DateField(verbose_name='Data de Nascimento')
     sexo = models.CharField(max_length=1, choices=choice_de_sexo)
@@ -24,7 +26,7 @@ class Paciente(models.Model):
 
 class DadosPaciente(models.Model):
     paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE)
-    data = models.DateField()
+    data = models.DateField(verbose_name='Data de início do tratamento')
     peso = models.IntegerField()
     altura = models.IntegerField()
     pa = models.IntegerField()

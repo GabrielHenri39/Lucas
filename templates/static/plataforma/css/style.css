@@ -7,8 +7,8 @@
 
 
 .bg_navbar {
-	background-image: linear-gradient(to right, #99FF99,#66FF99);
-    
+	background-image: linear-gradient(to right,#a4f3a4,#003f18 );
+    /* #99FF99,#66FF99 */
 }
 .font_logo {
 	color: rgb(175, 153, 25);
@@ -65,3 +65,64 @@
 	display: flex;
 	align-items: center;
  }
+
+ .card-lateral {
+
+    background-image: linear-gradient(to right,#a4f3a4,#003f18 );
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 5px 5px 5px gray;
+
+}
+
+.link-lateral:hover {
+    text-decoration: none;
+}
+
+.titulo {
+
+    color: #27DB8F;
+
+}
+
+.card-paciente {
+
+    background-color: #EAEAEA;
+    width: 100%;
+    box-shadow: 3px 3px 3px gray;
+    padding: 20px;
+    color: black;
+
+}
+
+.link-hover:hover {
+    text-decoration: none;
+}
+
+.foto-perfil {
+    text-align: center;
+}
+
+.dados {
+    font-weight: bold;
+}
+
+.descricao {
+
+    margin-left: -12%;
+
+}
+
+@media (max-width: 1300px) {
+
+    .descricao {
+
+        margin-left: 1px;
+
+    }
+
+}
