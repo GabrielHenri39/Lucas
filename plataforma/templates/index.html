@@ -69,18 +69,25 @@
                         </div>
 
                     </div>
+                    <div class="row">
+                        <div class="col">
+                            <br >
+                            <label>Sexo:</label>
+                            <select name="sexo" class="form-control col-xs-2">
+                                <option value="m">Masculino</option>
+                                <option value="f">Feminino</option> 
+                            </select>
 
-                    <br>
-                    <label>Sexo:</label>
-                    <select name="sexo" class="form-control">
-                        <option value="m">Masculino</option>
-                        <option value="f">Feminino</option>
-                    </select>
-
-                    <br>
-
-                    <label>CPF:</label>
-                    <input type="text" placeholder="123.456.789-10" class="form-control" name="cpf">
+                        </div>
+                    
+                        
+                        <div class="col">
+                            <br>
+                            <label>CPF:</label>
+                            <input type="text" placeholder="123.456.789-10" class="form-control col-xs-3" name="cpf">
+                        </div>
+                        
+                    </div>    
                     
                     <br>
                     
@@ -92,7 +99,18 @@
                     <label>Telefone:</label>
                     <input type="text" placeholder="+55 (00) 00000-0000" class="form-control" name="telefone">
                     <br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="col-xs-3">Início do tratamento:</label>
+                            <input type="date"  class="form-control col-sm-4  "  id="ex2" name="data-tratamento"> 
+
+                        </div>
+
+                        
+                    </div>
+                    <br>
                     <input type="submit" class="btn btn-success btn-lg" value="Registar">
+                    
                 
                 </form>
 
