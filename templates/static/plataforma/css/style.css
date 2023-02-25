@@ -7,12 +7,12 @@
 
 
 .bg_navbar {
-	background-image: linear-gradient(to right,#a4f3a4,#003f18 );
+	background-image: linear-gradient(to right,#a4f3a4,#7ff8ad );
     /* #99FF99,#66FF99 */
 }
 .font_logo {
 	color: rgb(175, 153, 25);
-    -webkit-text-stroke-width: 0.9px;
+    -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: #000;
 	font-size: 22px;
     font-weight: bold;
@@ -68,7 +68,7 @@
 
  .card-lateral {
 
-    background-image: linear-gradient(to right,#a4f3a4,#003f18 );
+    background-image: linear-gradient(to right,#a4f3a4,#0ed85c );
     margin-top: 20px;
     padding: 10px;
     color: white;
@@ -92,7 +92,7 @@
 .card-paciente {
 
     background-color: #EAEAEA;
-    width: 100%;
+    width: 99%;
     box-shadow: 3px 3px 3px gray;
     padding: 20px;
     color: black;
@@ -125,4 +125,8 @@
 
     }
 
+}
+
+.t30{
+    width: 40%;
 }
