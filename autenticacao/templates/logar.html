@@ -33,7 +33,7 @@
                     {% endif %}
                     <br>
                     <br>
-                    <form method="POST" action="{% url 'logar' %}">
+                    <form method="POST" action="{% url 'login' %}">
                         {% csrf_token %}
                         <input name="username" class="input_cadastrar input_cadastrar_nome" type="text" placeholder="Username...">
                         <br>
@@ -56,4 +56,3 @@
     
 
 {% endblock %}
-                

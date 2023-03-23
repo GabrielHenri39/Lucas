@@ -1,132 +1,132 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Source+Serif+Pro:wght@200&display=swap');
 
-*{
-	font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 .bg_navbar {
-	background-image: linear-gradient(to right,#a4f3a4,#7ff8ad );
-    /* #99FF99,#66FF99 */
+  background-image: linear-gradient(to right, #a4f3a4, #7ff8ad);
+  /* #99FF99,#66FF99 */
 }
+
 .font_logo {
-	color: rgb(175, 153, 25);
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: #000;
-	font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    font-family: 'Lobster', cursive;
-    display: inline;
+  color: rgb(175, 153, 25);
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: 'Lobster', cursive;
+  display: inline;
 }
 
-.img_capa_p{
-    width: 100px;
-    
+.img_capa_p {
+  width: 100px;
 }
 
-.valor{
-	font-family:'Gideon Roman',cursive;
-	display: flex;
-	align-items: center;
-    font-weight: bold;
-	transition-property: none!important;
-	font-size: 20px;
-	margin-left: 5%;
-	color: #050505f3;
-    border-bottom: 1px solid white;
-	
+.valor {
+  font-family: 'Gideon Roman', cursive;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  transition-property: none !important;
+  font-size: 20px;
+  margin-left: 5%;
+  color: #050505f3;
+  border-bottom: 1px solid white;
 }
 
+table tr th {
+  max-width: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.2em;
+  text-align: left;
+}
 
+.form {
+  border: 2px solid black;
+  max-height: min-content;
+}
 
- table tr th {
-	 max-width: 10%;
-	 font-family: Arial, Helvetica, sans-serif;
-	 
-	 padding: 0.2em;
-	 text-align: left;
- }
+.font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  max-height: min-content;
+}
 
- .form{
-	border: 2px solid black;
-	
-	max-height: min-content;
- }
+#foto {
+  display: flex;
+  align-items: center;
+}
 
- .font{
-	 font-family: Arial, Helvetica, sans-serif;
-	 font-weight: normal;
-	 max-height: min-content;
- }
-
- #foto{
-	display: flex;
-	align-items: center;
- }
-
- .card-lateral {
-
-    background-image: linear-gradient(to right,#a4f3a4,#0ed85c );
-    margin-top: 20px;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    box-shadow: 5px 5px 5px gray;
-
+.card-lateral {
+  background-image: linear-gradient(to right, #a4f3a4, #0ed85c);
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .link-lateral:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .titulo {
-
-    color: #27DB8F;
-
+  color: #27db8f;
 }
 
 .card-paciente {
-
-    background-color: #EAEAEA;
-    width: 99%;
-    box-shadow: 3px 3px 3px gray;
-    padding: 20px;
-    color: black;
-
+  background-color: #eaeaea;
+  width: 100%;
+  box-shadow: 3px 3px 3px gray;
+  padding: 20px;
+  color: black;
 }
 
 .link-hover:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .foto-perfil {
-    text-align: center;
+  text-align: center;
 }
 
 .dados {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .descricao {
+  margin-left: -12%;
+}
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .descricao {
+    margin-left: 1px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* For tablets: */
+  .descricao {
+    margin-left: -8%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* For small desktops: */
+  .descricao {
+    margin-left: -10%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* For large desktops: */
+  .descricao {
     margin-left: -12%;
-
-}
-
-@media (max-width: 1300px) {
-
-    .descricao {
-
-        margin-left: 1px;
-
-    }
-
-}
-
-.t30{
-    width: 40%;
+  }
 }

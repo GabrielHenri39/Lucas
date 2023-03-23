@@ -14,10 +14,13 @@
     {% endif %}
 
     <br>
-    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#modal">
-    Novo paciente
-    </button>
-    <br>
+    <a href="{% url 'novo_paciente' %}">
+        <button type="button" class="btn btn-outline-success"  >
+            Novo paciente
+        </button>
+
+    </a>
+    <br> 
     <br>
     {% for paciente in pacientes%}
         <div class="col-md-4">
@@ -41,83 +44,4 @@
         </div>
     {% endfor %}
 
-
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title titulo" id="exampleModalLabel">Cadastrar paciente</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            
-            <div class="modal-body">
-                <form action="{% url 'home' %}" method="POST">
-                    {% csrf_token %}
-
-
-                    <div class="row">
-
-                        <div class="col-md-3">
-                            <img src="{% static 'plataforma/img/perfil2.png' %}">
-                        </div>
-
-                        <div class="col-md-9">
-                            <label>Nome:</label>
-                            <input type="text" placeholder="Digite o nome do paciente..." class="form-control" name="nome">
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <br >
-                            <label>Sexo:</label>
-                            <select name="sexo" class="form-control col-xs-2">
-                                <option value="m">Masculino</option>
-                                <option value="f">Feminino</option> 
-                            </select>
-
-                        </div>
-                    
-                        
-                        <div class="col">
-                            <br>
-                            <label>CPF:</label>
-                            <input type="text" placeholder="123.456.789-10" class="form-control col-xs-3" name="cpf">
-                        </div>
-                        
-                    </div>    
-                    
-                    <br>
-                    
-                    <label>Data de Nascimento:</label>
-                    <input type="date" class="form-control" name="data">   
-
-                    <br>
-                    
-                    <label>Telefone:</label>
-                    <input type="text" placeholder="+55 (00) 00000-0000" class="form-control" name="telefone">
-                    <br>
-                    <div class="row">
-                        <div class="col">
-                            <label for="col-xs-3">Início do tratamento:</label>
-                            <input type="date"  class="form-control col-sm-4  "  id="ex2" name="data-tratamento"> 
-
-                        </div>
-
-                        
-                    </div>
-                    <br>
-                    <input type="submit" class="btn btn-success btn-lg" value="Registar">
-                    
-                
-                </form>
-
-
-            </div>
-        
-        </div>
-    </div>
-    </div>
-{% endblock%}
+{% endblock %}

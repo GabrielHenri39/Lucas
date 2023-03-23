@@ -14,3 +14,10 @@ def idade(data_nascimento):
     if idade == 1:
         texto = 'Ano'
     return f"{idade} {texto}."
+
+    
+@register.filter
+def mask_cpf(value):
+    cpf = str(value)
+    cpf_masked = '.'.join([cpf[:3], cpf[3:6], cpf[6:9]]) + '-' + cpf[9:]
+    return cpf_masked

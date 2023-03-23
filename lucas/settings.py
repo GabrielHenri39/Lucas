@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-flzn=o_rlukpb^mex2*v6r-)(ymfz7lcspiqfrk#py902c96)b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.11', '127.0.0.1']
+ALLOWED_HOSTS = ['192.168.1.11', '127.0.0.1','localhost']
 
 
 # Application definition
@@ -39,8 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'debug_toolbar',
     'autenticacao',
     'plataforma',
+    
 ]
 
 MIDDLEWARE = [
@@ -49,9 +51,15 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
 
 ROOT_URLCONF = 'lucas.urls'
 
@@ -69,7 +77,7 @@ TEMPLATES = [
             ],
             'libraries':{
                 'filtros': 'plataforma.templatetags.filtros',
-                }
+            }
         },
     },
 ]

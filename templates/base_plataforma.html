@@ -3,6 +3,7 @@
 {% load static %}
 
 {% block 'head' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'plataforma/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'plataforma/css/plataforma.css' %}">
 {% endblock  %}
@@ -10,45 +11,36 @@
 {% block 'body' %}
     <div class="container-fluid">
         <div class="row">
-                <div class="col-md-2">
-                    <a href="{% url 'home' %}" class="link-lateral">
-                        <div class="card-lateral">
-                            <img src="{% static 'plataforma/img/paciente.png' %}">
-                            <br>
-                            <br>
-
-                            <h3>Gerenciar Pacientes</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="link-lateral">
-                        <div class="card-lateral">
-                            <img src="{% static 'plataforma/img/dados_paciente.png' %}">
-                            <br>
-                            <br>
-
-                            <h3>Dados do Pacientes</h3>
-                        </div>
-                    </a>
-
-                    <a href="#" class="link-lateral">
-                        <div class="card-lateral">
-                            <img src="{% static 'plataforma/img/plano_alimentar.png' %}">
-                            <br>
-                            <br>
-
-                            <h3>Agendar</h3>
-                        </div>
-                    </a>
-                </div>
-
-            <div class="col-md-8">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <a href="{% url 'home' %}" class="link-lateral">
+                    <div class="card-lateral rounded">
+                        <img src="{% static 'plataforma/img/paciente.png' %}" class="img-fluid">
+                        <br>
+                        <br>
+                        <h3>Gerenciar Pacientes</h3>
+                    </div>
+                </a>
+                <a href="#" class="link-lateral">
+                    <div class="card-lateral">
+                        <img src="{% static 'plataforma/img/dados_paciente.png' %}" class="img-fluid">
+                        <br>
+                        <br>
+                        <h3>Dados do Pacientes</h3>
+                    </div>
+                </a>
+                <a href="#" class="link-lateral">
+                    <div class="card-lateral">
+                        <img src="{% static 'plataforma/img/plano_alimentar.png' %}" class="img-fluid">
+                        <br>
+                        <br>
+                        <h3>Agendar</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-8 col-sm-9 col-lg-10">
                 {% block 'plataforma' %}
-
-
                 {% endblock %}
             </div>
-
         </div>
     </div>
-{% endblock%}
+{% endblock %}

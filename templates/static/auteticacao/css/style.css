@@ -1,8 +1,9 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+/* Default styles */
 .sidebar {
-    background-image: linear-gradient(to right, #ccffcc,#7ff8bc);;
+    background-image: linear-gradient(to right, #ccffcc, #7ff8bc);
     height: 100vh;
 }
 
@@ -10,7 +11,6 @@
     color: rgb(175, 153, 25);
     -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: #000;
-
 }
 
 .logo_sidebar {
@@ -32,6 +32,7 @@
     margin-top: 50px;
     text-align: center;
 }
+
 .bg_navbar {
     background-color: #128607f3;
 }
@@ -84,11 +85,83 @@
     background-position-x: 20px;
     background-position-y: 10px;
     padding-left: 70px;
-    
 }
 
 .input_cadastrar_nome {
-    background-image:url('/static/auteticacao/img/user.png' );
+    background-image: url('/static/auteticacao/img/user.png');
+}
+
+.input_cadastrar_email {
+    background-image: url('/static/auteticacao/img/email.png');
+}
+
+.input_cadastrar_senha {
+    background-image: url('/static/auteticacao/img/senha.png');
+}
+
+.btn_cadastrar {
+    background-color: #298839;
+    border: none;
+    color: white;
+    font-size: 30px;
+    padding: 5px 6px 5px 6px;
+    border-radius: 20px;
+    margin-top: 4%;
+}
+
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+
+    /* Adjust the styles for screens with a maximum width of 768px */
+    .logo {
+        font-size: 40px;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .descricao {
+        font-size: 20px;
+    }
+
+    .btn_logar {
+        font-size: 24px;
+    }
+
+.area_cadastrar {
+    text-align: center;
+}
+
+.titulo_area_cadastrar {
+    font-size: 50px;
+    color: #298839;
+    margin-top: 15%;
+    font-weight: bold;
+}
+
+.input_cadastrar {
+    width: 60%;
+    border: none;
+    background-color: #C4C4C4;
+    padding: 10px;
+    outline: 0;
+    font-size: 20px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: 10px;
+    padding-left: 70px;
+
+}
+
+.input_cadastrar_nome {
+    background-image: url('/static/auteticacao/img/user.png');
 
 
 }
@@ -105,7 +178,7 @@
 .btn_cadastrar {
     background-color: #298839;
     border: none;
-    color:white;
+    color: white;
     font-size: 30px;
     padding: 5px 6px 5px 6px;
     border-radius: 20px;

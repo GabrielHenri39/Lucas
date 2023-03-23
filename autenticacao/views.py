@@ -4,7 +4,7 @@ from django.contrib import messages, auth
 from django.contrib.messages import constants
 
 # Create your views here.
-def logar(request):
+def login(request):
     if request.user.is_authenticated:
         return redirect('/')
 
@@ -68,7 +68,7 @@ def cadastro(request):
 
 def sair(request):
     request.session.flush()
-    return redirect('/auth/logar/')
+    return redirect('/auth/login/')
 
 
 
