@@ -1,0 +1,103 @@
+{% extends 'base_plataforma.html' %}
+{% load  static   %}
+
+
+
+{% block 'plataforma' %}
+
+
+    {% if messages %}
+        <br>
+        {% for message in messages %}
+            <div class="alert {{message.tags }}">
+                {{message}}
+            </div>
+        {% endfor %}
+    {% endif %}
+    <br>
+    <a href="/">
+        <button type="button" class="btn btn-outline-success"  >
+            Voltar
+        </button>
+        <br>
+
+    </a>
+    <br>
+    <div class='container'>
+
+        <form action="{% url 'home' %}" method="POST">
+            {% csrf_token %}
+    
+    
+            <div class="row">
+    
+                <div class="col-md-3">
+                    <img src="{% static 'plataforma/img/perfil2.png' %}">
+                </div>
+    
+                <div class="col-md-9">
+                    <label>Nome:</label>
+                    <input type="text" placeholder="Digite o nome do paciente..." class="form-control" name="nome">
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <br >
+                    <label>Sexo:</label>
+                    <select name="sexo" class="form-control col-sm-7">
+                        <option value="m">Masculino</option>
+                        <option value="f">Feminino</option> 
+                    </select>
+    
+                </div>
+            
+                
+                <div class="col">
+                    
+                    <br>
+                    <label>CPF:</label>
+                    <input type="text" placeholder="123.456.789-10" class="form-control col-xs-3 cpf-mask" name="cpf" >
+                </div>
+                
+            </div>    
+            <div class="row">
+                <div class="col-sm-6">
+                    <br>
+                    <label>Data de Nascimento:</label>
+                    <input type="date" class="form-control col-sm-7" name="data">   
+
+                </div >
+                <div class='col-sm-6'>
+                    
+                    <br>
+                    <label>Telefone:</label>
+                    <input type="text" placeholder="+55 (00) 00000-0000" class="form-control col-sm-20 telefone-mank " name="telefone">
+    
+                </div>
+            </div> 
+
+            
+    
+            <div class="row">
+                <div class="col-sm-6">
+                    <br>
+                    <label >Início do tratamento:</label>
+                    <input type="date"  class="form-control col-sm-7
+                     " name="data-tratamento"> 
+    
+                </div>
+            
+    
+                
+            </div>
+            <br>
+            <input type="submit" class="btn btn-success btn-lg" value="Registar">
+            
+        
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src= "{% static 'plataforma/js/jquery.mask.min.js' %}"></script>
+    <script src="{% static 'plataforma/js/mask.js' %}"></script>
+{% endblock  %}
